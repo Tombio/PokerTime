@@ -10,8 +10,11 @@ import UIKit
 import LCDView
 
 class ViewController: UIViewController {
-    
+    #if DEBUG_MODE
+    let levelTime = 20 // Seconds
+    #else
     let levelTime = 12 * 60 // Seconds
+    #endif
     let smallBlindStart = 25 // Big blind = 2 x small blind
     let sounds = Sounds()
     
@@ -100,14 +103,12 @@ class ViewController: UIViewController {
             if !paused {
                 remainingTime -= 1
                 if (1...5).contains(remainingTime) {
-                    debugPrint("short beep")
                     sounds.playShortBeep()
                 }
             }
             
             if remainingTime == 0 {
                 sounds.playLongBeep()
-                debugPrint("long beep")
                 currentLevel = currentLevel * 2
                 remainingTime = levelTime
                 style = Styles.green
