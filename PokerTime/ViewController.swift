@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     let smallBlindStart = 25 // Big blind = 2 x small blind
     let sounds = Sounds()
     
+    
+    var displayLink: CADisplayLink?
     var timeDelta: Double = 0
     var style: Style = Styles.green {
         didSet {
@@ -45,17 +47,16 @@ class ViewController: UIViewController {
         didSet {
             let minutes = remainingTime / 60
             let seconds = remainingTime - minutes * 60
-            timerView.caption = String(format: "%02d", minutes) + (seconds % 2 == 0 ? ":" : " ") + String(format: "%02d", seconds)
+            timerView.caption = String(format: "%02d", minutes) + (seconds % 2 == 0 ? ":" : ".") + String(format: "%02d", seconds)
         }
     }
     var paused = true {
         didSet {
             sounds.playShortBeep()
             resetButton.isHidden = !paused
+            displayLink?.isPaused = paused
         }
     }
-    
-    
     
     @IBOutlet weak var timerView: LCDView!
     @IBOutlet weak var smallBlindView: LCDView!
@@ -77,8 +78,8 @@ class ViewController: UIViewController {
         addTapRecognizer()
         reset()
         
-        let displayLink = CADisplayLink(target: self, selector: #selector(update))
-        displayLink.add(to: RunLoop.current, forMode: RunLoopMode.defaultRunLoopMode)
+        displayLink = CADisplayLink(target: self, selector: #selector(update))
+        displayLink!.add(to: RunLoop.current, forMode: RunLoopMode.defaultRunLoopMode)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -89,6 +90,7 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         UIApplication.shared.isIdleTimerDisabled = false
+        paused = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -97,7 +99,7 @@ class ViewController: UIViewController {
     }
     
     @objc private func update() {
-        let now = floor(Date().timeIntervalSince1970)
+        let now = Date().timeIntervalSince1970
         if now - timeDelta >= 1 {
             timeDelta = now
             if !paused {

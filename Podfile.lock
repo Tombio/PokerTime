@@ -6,21 +6,21 @@ PODS:
 
 DEPENDENCIES:
   - AudioKit (~> 4.0)
-  - LCDView (from `https://github.com/coniferprod/LCDView.git`)
+  - LCDView (from `https://github.com/Tombio/LCDView.git`)
 
 EXTERNAL SOURCES:
   LCDView:
-    :git: https://github.com/coniferprod/LCDView.git
+    :git: https://github.com/Tombio/LCDView.git
 
 CHECKOUT OPTIONS:
   LCDView:
-    :commit: 36d8750ac43e1e023d605ffe0b1d411514158bc7
-    :git: https://github.com/coniferprod/LCDView.git
+    :commit: f9affa71448094b73001338a155d2ed17187394a
+    :git: https://github.com/Tombio/LCDView.git
 
 SPEC CHECKSUMS:
   AudioKit: 65e0035ce267446932ac733257053ac97dfe395e
   LCDView: ccb3c1c8ccc45c0cbce0111bebe778da305ee719
 
-PODFILE CHECKSUM: b8e20027a11daabb864894f99e4a87bbb5d64cd5
+PODFILE CHECKSUM: bc22e80820c310c1890ca26eba6a5cea2065f698
 
 COCOAPODS: 1.4.0

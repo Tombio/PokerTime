@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -42,8 +41,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="padding">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleToFill" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFill" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLG-lF-BFD" userLabel="Big Blind" customClass="LCDView" customModule="LCDView">
@@ -69,8 +66,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="padding">
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleToFill" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFill" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-Je-eWM" customClass="LCDView" customModule="LCDView">
@@ -96,8 +91,6 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="padding">
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleToFill" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFill" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGT-Mu-lgH">
