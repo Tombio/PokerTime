@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     let levelTime = 12 * 60 // Seconds
     let smallBlindStart = 25 // Big blind = 2 x small blind
     
+    var timeDelta: Double = 0
+    var style: Style = Styles.green {
+        didSet {
+            timerView.dotOnColor = style.onColor
+            timerView.dotOffColor = style.offColor
+        }
+    }
+    
     @IBAction func buttonTapped(_ sender: UIButton) {
         if paused {
             reset()
@@ -42,7 +50,7 @@ class ViewController: UIViewController {
         }
     }
     
-    var timeDelta: Double = 0
+    
     
     @IBOutlet weak var timerView: LCDView!
     @IBOutlet weak var smallBlindView: LCDView!
@@ -94,6 +102,11 @@ class ViewController: UIViewController {
             if remainingTime == 0 {
                 currentLevel = currentLevel * 2
                 remainingTime = levelTime
+                style = Styles.green
+            }
+            
+            if remainingTime < 60 {
+                style = Styles.red
             }
         }
         //debugPrint("time delta", timeDelta, "now", now)

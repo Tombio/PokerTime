@@ -14,6 +14,7 @@
 		5605453E207E782200079F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5605453C207E782200079F5B /* LaunchScreen.storyboard */; };
 		56054549207E782200079F5B /* PokerTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56054548207E782200079F5B /* PokerTimeTests.swift */; };
 		56054554207E782200079F5B /* PokerTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56054553207E782200079F5B /* PokerTimeUITests.swift */; };
+		566606B9207F66A300FE5FE3 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566606B8207F66A300FE5FE3 /* Style.swift */; };
 		B7628E864B5D370533055DCF /* Pods_PokerTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1430E271016BC1B523C4CE /* Pods_PokerTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		5605454F207E782200079F5B /* PokerTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56054553207E782200079F5B /* PokerTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerTimeUITests.swift; sourceTree = "<group>"; };
 		56054555207E782200079F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566606B8207F66A300FE5FE3 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		CF1430E271016BC1B523C4CE /* Pods_PokerTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0177C209F914007698E1C8D /* Pods-PokerTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.debug.xcconfig"; sourceTree = "<group>"; };
 		F9831F4E3D697C98A2876F8D /* Pods-PokerTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				5605453A207E782200079F5B /* Assets.xcassets */,
 				5605453C207E782200079F5B /* LaunchScreen.storyboard */,
 				5605453F207E782200079F5B /* Info.plist */,
+				566606B8207F66A300FE5FE3 /* Style.swift */,
 			);
 			path = PokerTime;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56054536207E781E00079F5B /* ViewController.swift in Sources */,
+				566606B9207F66A300FE5FE3 /* Style.swift in Sources */,
 				56054534207E781E00079F5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,8 +519,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -532,8 +539,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTime/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -549,7 +559,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -566,7 +580,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTimeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTimeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -582,7 +600,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTimeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTimeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -598,7 +620,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTimeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTimeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
