@@ -14,6 +14,7 @@
 		5605453E207E782200079F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5605453C207E782200079F5B /* LaunchScreen.storyboard */; };
 		56054549207E782200079F5B /* PokerTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56054548207E782200079F5B /* PokerTimeTests.swift */; };
 		56054554207E782200079F5B /* PokerTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56054553207E782200079F5B /* PokerTimeUITests.swift */; };
+		B7628E864B5D370533055DCF /* Pods_PokerTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF1430E271016BC1B523C4CE /* Pods_PokerTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		5605454F207E782200079F5B /* PokerTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56054553207E782200079F5B /* PokerTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerTimeUITests.swift; sourceTree = "<group>"; };
 		56054555207E782200079F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1430E271016BC1B523C4CE /* Pods_PokerTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0177C209F914007698E1C8D /* Pods-PokerTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.debug.xcconfig"; sourceTree = "<group>"; };
+		F9831F4E3D697C98A2876F8D /* Pods-PokerTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7628E864B5D370533055DCF /* Pods_PokerTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				56054547207E782200079F5B /* PokerTimeTests */,
 				56054552207E782200079F5B /* PokerTimeUITests */,
 				56054531207E781E00079F5B /* Products */,
+				7C9A898DA42135C88BD1AF2B /* Pods */,
+				F6FA09C3B8F64AE3C569D9DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = PokerTimeUITests;
 			sourceTree = "<group>";
 		};
+		7C9A898DA42135C88BD1AF2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0177C209F914007698E1C8D /* Pods-PokerTime.debug.xcconfig */,
+				F9831F4E3D697C98A2876F8D /* Pods-PokerTime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6FA09C3B8F64AE3C569D9DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF1430E271016BC1B523C4CE /* Pods_PokerTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56054558207E782200079F5B /* Build configuration list for PBXNativeTarget "PokerTime" */;
 			buildPhases = (
+				1FAC9209AE8470225983ED30 /* [CP] Check Pods Manifest.lock */,
 				5605452C207E781E00079F5B /* Sources */,
 				5605452D207E781E00079F5B /* Frameworks */,
 				5605452E207E781E00079F5B /* Resources */,
+				0E6D660E50ED1AA3D2A32CB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E6D660E50ED1AA3D2A32CB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LCDView/LCDView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCDView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FAC9209AE8470225983ED30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokerTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5605452C207E781E00079F5B /* Sources */ = {
@@ -428,11 +493,13 @@
 		};
 		56054559207E782200079F5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0177C209F914007698E1C8D /* Pods-PokerTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,17 +507,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		5605455A207E782200079F5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9831F4E3D697C98A2876F8D /* Pods-PokerTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YU4AFJ6SHS;
 				INFOPLIST_FILE = PokerTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +527,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.studiowannabe.PokerTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

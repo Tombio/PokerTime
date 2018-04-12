@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,147 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokerTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dX-iy-sfz" userLabel="Small Blind" customClass="LCDView" customModule="LCDView">
+                                <rect key="frame" x="102.5" y="453" width="358.5" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="caption" value="1600"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOnColor">
+                                        <color key="value" red="0.0" green="0.87514505970000001" blue="0.10582384540000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOffColor">
+                                        <color key="value" red="0.0" green="0.16532659147665774" blue="0.019991537925607338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotWidth">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotHeight">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleToFill" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFill" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yLG-lF-BFD" userLabel="Big Blind" customClass="LCDView" customModule="LCDView">
+                                <rect key="frame" x="563" y="453" width="358.5" height="154"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="caption" value="3200"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOnColor">
+                                        <color key="value" red="0.0" green="0.87514505970000001" blue="0.10582384540000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOffColor">
+                                        <color key="value" red="0.0" green="0.16532659147665774" blue="0.019991537925607338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotWidth">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotHeight">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleToFill" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFill" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-Je-eWM" customClass="LCDView" customModule="LCDView">
+                                <rect key="frame" x="102.5" y="82" width="819" height="307"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="caption" value="12:00"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOnColor">
+                                        <color key="value" red="0.0" green="0.87514505968169765" blue="0.10582384536431166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOffColor">
+                                        <color key="value" red="0.0" green="0.16532659147665774" blue="0.019991537925607338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotWidth">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="dotHeight">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleToFill" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="aspectFill" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGT-Mu-lgH">
+                                <rect key="frame" x="333" y="643" width="358.5" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.86274509799999999" green="0.1176470588" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTe-72-k7m"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJA-aw-KuV" customClass="LCDView" customModule="LCDView">
+                                <rect key="frame" x="681" y="605" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOnColor">
+                                        <color key="value" red="0.14872832447800008" green="0.86274509799999999" blue="0.22618623520737907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="caption" value="12:2"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotOffColor">
+                                        <color key="value" red="0.2076736572" green="0.2076736572" blue="0.2076736572" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dpd-Je-eWM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="4Hk-ZX-NIY"/>
+                            <constraint firstItem="yLG-lF-BFD" firstAttribute="height" secondItem="9dX-iy-sfz" secondAttribute="height" id="B7a-1D-uBd"/>
+                            <constraint firstItem="fGT-Mu-lgH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cir-be-Ci5"/>
+                            <constraint firstItem="yLG-lF-BFD" firstAttribute="top" secondItem="9dX-iy-sfz" secondAttribute="top" id="IbW-7u-exo"/>
+                            <constraint firstItem="9dX-iy-sfz" firstAttribute="top" secondItem="dpd-Je-eWM" secondAttribute="bottom" constant="64" id="Lli-ui-sLf"/>
+                            <constraint firstItem="9dX-iy-sfz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="SMb-rO-Cut"/>
+                            <constraint firstItem="dpd-Je-eWM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="UTz-gQ-4rD"/>
+                            <constraint firstItem="dpd-Je-eWM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xhd-VW-KBu"/>
+                            <constraint firstItem="yLG-lF-BFD" firstAttribute="width" secondItem="9dX-iy-sfz" secondAttribute="width" id="YAb-Pt-jUK"/>
+                            <constraint firstItem="fGT-Mu-lgH" firstAttribute="width" secondItem="yLG-lF-BFD" secondAttribute="width" id="af2-2x-Q6U"/>
+                            <constraint firstItem="yLG-lF-BFD" firstAttribute="trailing" secondItem="dpd-Je-eWM" secondAttribute="trailing" id="kfP-ex-zq2"/>
+                            <constraint firstItem="dpd-Je-eWM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="ntn-fY-Yhs"/>
+                            <constraint firstItem="9dX-iy-sfz" firstAttribute="leading" secondItem="dpd-Je-eWM" secondAttribute="leading" id="oCJ-jr-IOA"/>
+                            <constraint firstItem="fGT-Mu-lgH" firstAttribute="top" secondItem="yLG-lF-BFD" secondAttribute="bottom" constant="36" id="wpP-T9-ZjK"/>
+                            <constraint firstItem="9dX-iy-sfz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.35" id="yQT-8h-9nV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bigBlindView" destination="yLG-lF-BFD" id="TEs-7X-MGV"/>
+                        <outlet property="resetButton" destination="fGT-Mu-lgH" id="zdm-80-gO3"/>
+                        <outlet property="smallBlindView" destination="9dX-iy-sfz" id="OFC-OT-CKv"/>
+                        <outlet property="timerView" destination="dpd-Je-eWM" id="fiq-0f-gcv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="67.96875" y="135.9375"/>
         </scene>
     </scenes>
 </document>

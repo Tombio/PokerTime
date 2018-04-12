@@ -1,0 +1,21 @@
+PODS:
+  - LCDView (0.0.4)
+
+DEPENDENCIES:
+  - LCDView (from `https://github.com/coniferprod/LCDView.git`)
+
+EXTERNAL SOURCES:
+  LCDView:
+    :git: https://github.com/coniferprod/LCDView.git
+
+CHECKOUT OPTIONS:
+  LCDView:
+    :commit: 23993fde1dc25f914505d65418379dc36fed095a
+    :git: https://github.com/coniferprod/LCDView.git
+
+SPEC CHECKSUMS:
+  LCDView: c8264a6f9f004837edec6066da755bae5ea0e706
+
+PODFILE CHECKSUM: 1fc3b098a8f068dccf4170b871f891fdee66b955
+
+COCOAPODS: 1.5.0
