@@ -11,18 +11,17 @@ import XCTest
 
 class PokerTimeTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
+    func testNumberAbrevation() {
+        let one = 1.formatUsingAbbrevation()
+        debugPrint(one)
+        XCTAssert(1.formatUsingAbbrevation() == "1")
+        XCTAssert(10.formatUsingAbbrevation() == "10")
+        XCTAssert(99.formatUsingAbbrevation() == "99")
+        XCTAssert(999.formatUsingAbbrevation() == "999")
+        XCTAssert(9999.formatUsingAbbrevation() == "9999")
+        XCTAssert(99999.formatUsingAbbrevation() == "100K")
         // This is an example of a functional test case.
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     

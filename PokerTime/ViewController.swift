@@ -38,8 +38,10 @@ class ViewController: UIViewController {
     
     var currentLevel = 1 {
         didSet {
-            smallBlindView.caption = String(format: "%4d", smallBlindStart * currentLevel)
-            bigBlindView.caption = String(format: "%4d", (smallBlindStart * 2) * currentLevel)
+            let smallBlind = smallBlindStart * (2 << (currentLevel - 2))
+            debugPrint(smallBlind)
+            smallBlindView.caption = smallBlind.formatUsingAbbrevation().leftPadding(toLength: 4, withPad: " ")
+            bigBlindView.caption = (smallBlind * 2).formatUsingAbbrevation().leftPadding(toLength: 4, withPad: " ")
         }
     }
     
@@ -111,7 +113,7 @@ class ViewController: UIViewController {
             
             if remainingTime == 0 {
                 sounds.playLongBeep()
-                currentLevel = currentLevel * 2
+                currentLevel += 1
                 remainingTime = levelTime
                 style = Styles.green
             }
