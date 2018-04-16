@@ -40,8 +40,8 @@ class ViewController: UIViewController {
         didSet {
             let smallBlind = smallBlindStart * (2 << (currentLevel - 2))
             debugPrint(smallBlind)
-            smallBlindView.caption = smallBlind.formatUsingAbbrevation().leftPadding(toLength: 4, withPad: " ")
-            bigBlindView.caption = (smallBlind * 2).formatUsingAbbrevation().leftPadding(toLength: 4, withPad: " ")
+            smallBlindView.caption = smallBlind.formatUsingAbbreviation().leftPadding(toLength: 4, withPad: " ")
+            bigBlindView.caption = (smallBlind * 2).formatUsingAbbreviation().leftPadding(toLength: 4, withPad: " ")
         }
     }
     

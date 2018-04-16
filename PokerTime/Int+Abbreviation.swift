@@ -9,16 +9,16 @@
 import Foundation
 
 extension Int {
-    func formatUsingAbbrevation () -> String {
+    func formatUsingAbbreviation () -> String {
         let numFormatter = NumberFormatter()
         
-        typealias Abbrevation = (threshold:Double, divisor:Double, suffix:String)
-        let abbreviations:[Abbrevation] = [(1, 1, ""),
+        typealias Abbreviation = (threshold:Double, divisor:Double, suffix:String)
+        let abbreviations:[Abbreviation] = [(1, 1, ""),
                                            (10000.0, 1000.0, "K"),
                                            (1_000_000.0, 1_000_000.0, "M"),
                                            (100_000_000.0, 1_000_000_000.0, "B")]
         let startValue = Double (abs(self))
-        let abbreviation:Abbrevation = {
+        let abbreviation:Abbreviation = {
             var prevAbbreviation = abbreviations[0]
             for tmpAbbreviation in abbreviations {
                 if (startValue < tmpAbbreviation.threshold) {
