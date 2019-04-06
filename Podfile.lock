@@ -1,12 +1,19 @@
 PODS:
-  - AudioKit (4.2.3):
-    - AudioKit/UI (= 4.2.3)
-  - AudioKit/UI (4.2.3)
+  - AudioKit (4.7):
+    - AudioKit/Core (= 4.7)
+    - AudioKit/UI (= 4.7)
+  - AudioKit/Core (4.7)
+  - AudioKit/UI (4.7):
+    - AudioKit/Core
   - LCDView (0.0.5)
 
 DEPENDENCIES:
-  - AudioKit (~> 4.0)
+  - AudioKit (~> 4.7)
   - LCDView (from `https://github.com/Tombio/LCDView.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AudioKit
 
 EXTERNAL SOURCES:
   LCDView:
@@ -18,9 +25,9 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Tombio/LCDView.git
 
 SPEC CHECKSUMS:
-  AudioKit: 65e0035ce267446932ac733257053ac97dfe395e
+  AudioKit: 8b3c883fb6023d1b30764e40372991c9c66aa022
   LCDView: ccb3c1c8ccc45c0cbce0111bebe778da305ee719
 
-PODFILE CHECKSUM: bc22e80820c310c1890ca26eba6a5cea2065f698
+PODFILE CHECKSUM: f2a9296f15f52abb56ccb00b326b2b85331427b4
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0

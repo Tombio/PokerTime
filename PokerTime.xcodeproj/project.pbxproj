@@ -18,7 +18,7 @@
 		566606B9207F66A300FE5FE3 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566606B8207F66A300FE5FE3 /* Style.swift */; };
 		566606BB208084DB00FE5FE3 /* Int+Abbreviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566606BA208084DB00FE5FE3 /* Int+Abbreviation.swift */; };
 		566606BC2080859A00FE5FE3 /* Int+Abbreviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566606BA208084DB00FE5FE3 /* Int+Abbreviation.swift */; };
-		BB7FABAF577FE07D547345EB /* Pods_PokerTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED468091842380B7C333BBDB /* Pods_PokerTime.framework */; };
+		FF673FF41E3680A41CFE5C50 /* Pods_PokerTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127BF74197F6EFD38F6D6483 /* Pods_PokerTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		012C28F97DF1F08F34810FAD /* Pods-PokerTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.release.xcconfig"; sourceTree = "<group>"; };
+		127BF74197F6EFD38F6D6483 /* Pods_PokerTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		472F03821441436DB00892C0 /* Pods-PokerTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.release.xcconfig"; sourceTree = "<group>"; };
 		56054530207E781E00079F5B /* PokerTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56054533207E781E00079F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56054535207E781E00079F5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,8 +57,7 @@
 		561459B120809B6800AEB68A /* String+LeftPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LeftPad.swift"; sourceTree = "<group>"; };
 		566606B8207F66A300FE5FE3 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		566606BA208084DB00FE5FE3 /* Int+Abbreviation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Abbreviation.swift"; sourceTree = "<group>"; };
-		96350ECB4B87D1335DA65759 /* Pods-PokerTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.debug.xcconfig"; sourceTree = "<group>"; };
-		ED468091842380B7C333BBDB /* Pods_PokerTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB2CCC93EDF9517291AD5B9 /* Pods-PokerTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB7FABAF577FE07D547345EB /* Pods_PokerTime.framework in Frameworks */,
+				FF673FF41E3680A41CFE5C50 /* Pods_PokerTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +86,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F6F0871470D1398ADF880EA /* Pods */ = {
+		24360C9CD2B0E8B4B1C74C69 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				96350ECB4B87D1335DA65759 /* Pods-PokerTime.debug.xcconfig */,
-				012C28F97DF1F08F34810FAD /* Pods-PokerTime.release.xcconfig */,
+				7EB2CCC93EDF9517291AD5B9 /* Pods-PokerTime.debug.xcconfig */,
+				472F03821441436DB00892C0 /* Pods-PokerTime.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -102,8 +102,8 @@
 				56054547207E782200079F5B /* PokerTimeTests */,
 				56054552207E782200079F5B /* PokerTimeUITests */,
 				56054531207E781E00079F5B /* Products */,
-				3F6F0871470D1398ADF880EA /* Pods */,
-				78F762FE70D265F03D71CEAB /* Frameworks */,
+				24360C9CD2B0E8B4B1C74C69 /* Pods */,
+				BA211D8F31454AF3BB17F133 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,10 +151,10 @@
 			path = PokerTimeUITests;
 			sourceTree = "<group>";
 		};
-		78F762FE70D265F03D71CEAB /* Frameworks */ = {
+		BA211D8F31454AF3BB17F133 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ED468091842380B7C333BBDB /* Pods_PokerTime.framework */,
+				127BF74197F6EFD38F6D6483 /* Pods_PokerTime.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,12 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56054558207E782200079F5B /* Build configuration list for PBXNativeTarget "PokerTime" */;
 			buildPhases = (
-				50BEE14A684171A8F2C7734D /* [CP] Check Pods Manifest.lock */,
+				947166BFAE81F9FAD6AFFC47 /* [CP] Check Pods Manifest.lock */,
 				5605452C207E781E00079F5B /* Sources */,
 				5605452D207E781E00079F5B /* Frameworks */,
 				5605452E207E781E00079F5B /* Resources */,
-				D80CD19247493B1C7C770ACC /* [CP] Embed Pods Frameworks */,
-				714B20461625A799DD831318 /* [CP] Copy Pods Resources */,
+				57735828CBF359B6E8E6A8FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,7 +288,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		50BEE14A684171A8F2C7734D /* [CP] Check Pods Manifest.lock */ = {
+		57735828CBF359B6E8E6A8FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokerTime/Pods-PokerTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LCDView/LCDView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCDView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokerTime/Pods-PokerTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		947166BFAE81F9FAD6AFFC47 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,39 +322,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		714B20461625A799DD831318 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D80CD19247493B1C7C770ACC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LCDView/LCDView.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LCDView.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokerTime/Pods-PokerTime-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -523,7 +507,7 @@
 		};
 		56054559207E782200079F5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96350ECB4B87D1335DA65759 /* Pods-PokerTime.debug.xcconfig */;
+			baseConfigurationReference = 7EB2CCC93EDF9517291AD5B9 /* Pods-PokerTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,7 +528,7 @@
 		};
 		5605455A207E782200079F5B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 012C28F97DF1F08F34810FAD /* Pods-PokerTime.release.xcconfig */;
+			baseConfigurationReference = 472F03821441436DB00892C0 /* Pods-PokerTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
